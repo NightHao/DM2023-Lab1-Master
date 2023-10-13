@@ -36,3 +36,12 @@ def tokenize_text(text, remove_stopwords=False):
             # filters here
             tokens.append(word)
     return tokens
+
+def structure_data(new_data):
+    brandnew_data = []
+    for i in range(len(new_data.sentence)):
+        tmp = []
+        tmp.append(new_data.sentence)
+        tmp.append(new_data.score)
+        brandnew_data.append(tmp)
+    return brandnew_data
