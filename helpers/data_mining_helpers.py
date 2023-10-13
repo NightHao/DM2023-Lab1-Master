@@ -41,7 +41,8 @@ def structure_data(new_data):
     brandnew_data = []
     for i in range(len(new_data.sentence)):
         tmp = []
-        tmp.append(new_data.sentence)
-        tmp.append(new_data.score)
+        tmp.append(new_data.sentence[i])
+        tmp.append(new_data.score[i])
+        #print(tmp)
         brandnew_data.append(tmp)
     return brandnew_data
